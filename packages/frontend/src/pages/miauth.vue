@@ -21,8 +21,8 @@
 						<li v-for="p in _permissions" :key="p">{{ $t(`_permissions.${p}`) }}</li>
 					</ul>
 				</div>
-				<div v-if="name">{{ $t('_auth.shareAccess', { name }) }}</div>
 				<FormInfo warn>{{ i18n.ts.miauthWarn }}</FormInfo>
+				<div v-if="name">{{ $t('_auth.shareAccess', { name }) }}</div>
 				<div v-else>{{ i18n.ts._auth.shareAccessAsk }}</div>
 				<div :class="$style.buttons">
 					<MkButton inline @click="deny">{{ i18n.ts.cancel }}</MkButton>
