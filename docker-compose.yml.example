@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    build: .
+    image: raisan0919/misskey-vski
     restart: always
     links:
       - db
