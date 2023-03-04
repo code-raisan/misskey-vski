@@ -37,7 +37,7 @@ jobs:
           push: true
           platforms: ${{ steps.buildx.outputs.platforms }}
           provenance: false
-          tags: misskey/misskey:develop
+          tags: raisan0919/misskey:develop
           labels: develop
           cache-from: type=gha
           cache-to: type=gha,mode=max
