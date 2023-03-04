@@ -22,6 +22,7 @@
 					</ul>
 				</div>
 				<div v-if="name">{{ $t('_auth.shareAccess', { name }) }}</div>
+				<FormInfo warn>{{ i18n.ts.miauthWarn }}</FormInfo>
 				<div v-else>{{ i18n.ts._auth.shareAccessAsk }}</div>
 				<div :class="$style.buttons">
 					<MkButton inline @click="deny">{{ i18n.ts.cancel }}</MkButton>
@@ -41,6 +42,7 @@
 import { } from 'vue';
 import MkSignin from '@/components/MkSignin.vue';
 import MkButton from '@/components/MkButton.vue';
+import FormInfo from '@/components/MkInfo.vue';
 import * as os from '@/os';
 import { $i, login } from '@/account';
 import { i18n } from '@/i18n';
